@@ -1,0 +1,120 @@
+<!-- ========== SANS-6183.HTML - SOUTH ALABAMA NONPROFIT SUMMIT ========== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>South Alabama Nonprofit Summit | The Scanland Group</title>
+  <link rel="stylesheet" href="/assets/tsg.css">
+  <link rel="stylesheet" href="/assets/clients.css">
+  <script src="/assets/passwords.js"></script>
+  <script src="https://cms.scanland.org/cms.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="/tsg.html" class="brand">
+        <img class="logo" src="/assets/images/tsg.png" alt="TSG Logo">
+        <span class="brand-name">The Scanland Group</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="clean-header">
+      <h1>South Alabama Nonprofit Summit</h1>
+      <div class="action-grid">
+        <a href="#" class="action-button">View Contract</a>
+        <a href="#" class="action-button">View Invoice</a>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <div class="info-card">
+        <h2><span class="card-icon">📅</span>Meeting Schedule</h2>
+        <div class="meeting-info">
+          <div class="meeting-item">
+            <strong>Recurring Meeting</strong>
+            <span id="meeting-schedule">[Day & Time]</span>
+          </div>
+          <div class="meeting-item">
+            <strong>Next Meeting</strong>
+            <span id="next-meeting-date">[Date]</span>
+            <a href="#" id="meeting-link">Join Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="contact-section">
+          <button class="contact-toggle">
+            <span>Send Message to Your Team</span>
+            <span class="toggle-icon">▼</span>
+          </button>
+          <div class="contact-form-container">
+            <form class="contact-form" action="https://formspree.io/f/myzdovwq" method="POST">
+              <input type="hidden" name="Note" value="This message was sent from the South Alabama Nonprofit Summit client portal.">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="Name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="Email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="Subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="Message" placeholder="How can we help you?" required></textarea>
+              </div>
+              <button type="submit" class="submit-button">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-section">
+        <h3>Stay Connected</h3>
+        <div class="social-grid">
+          <a href="https://facebook.com/TheScanlandGroup" target="_blank" class="social-link" aria-label="Facebook">f</a>
+          <a href="https://twitter.com/ScanlandGroup" target="_blank" class="social-link" aria-label="Twitter">t</a>
+          <a href="https://instagram.com/TheScanlandGroup" target="_blank" class="social-link" aria-label="Instagram">ig</a>
+          <a href="https://linkedin.com/company/the-scanland-group" target="_blank" class="social-link" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>A <a href="https://scanland.org" target="_blank" rel="noopener">Scanland</a> Company</p>
+  </footer>
+
+  <script>
+    document.querySelector('.contact-toggle').addEventListener('click', () => {
+      document.querySelector('.contact-section').classList.toggle('open');
+    });
+
+    function updateMeetingInfo(zoomUrl, schedule, nextDate, contractUrl, invoiceUrl) {
+      document.getElementById('zoom-link').href = zoomUrl;
+      document.getElementById('meeting-link').href = zoomUrl;
+      document.getElementById('meeting-schedule').textContent = schedule;
+      document.getElementById('next-meeting-date').textContent = nextDate;
+      
+      if (contractUrl) document.querySelector('.action-button:nth-child(2)').href = contractUrl;
+      if (invoiceUrl) document.querySelector('.action-button:nth-child(3)').href = invoiceUrl;
+    }
+
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+      setTimeout(() => window.location.href = '/clients/client-thanks.html', 100);
+    });
+  </script>
+</body>
+</html>

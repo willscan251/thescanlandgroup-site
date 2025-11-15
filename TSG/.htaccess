@@ -1,0 +1,86 @@
+# The Scanland Group - Clean URL Configuration
+# Place this file in your website root directory
+
+# Enable URL Rewriting
+RewriteEngine On
+
+# Remove trailing slashes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/$ /$1 [R=301,L]
+
+# Handle home page - redirect index.html to root and tsg.html to root
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^tsg\.html$ / [R=301,L]
+
+# Main website pages - remove .html extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [L]
+
+# Redirect .html URLs to clean URLs (except client portal pages)
+RewriteCond %{THE_REQUEST} /([^.?\s]+)\.html[\s?] [NC]
+RewriteCond %1 !^clients/
+RewriteRule ^ /%1? [R=301,L]
+
+# Client portal routing - keep .html for security
+# Client portal pages in /clients/ directory keep their .html extensions
+# This maintains security through obscurity for authenticated pages
+
+# Special redirects for renamed thank you pages
+RewriteRule ^newsthanks/?$ /newsletter-thanks [R=301,L]
+RewriteRule ^podcastthanks/?$ /podcast-thanks [R=301,L]
+RewriteRule ^resourcethanks/?$ /resource-thanks [R=301,L]
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options SAMEORIGIN
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://formspree.io; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formspree.io;"
+</IfModule>
+
+# Cache Control
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 6 months"
+    ExpiresByType image/jpg "access plus 6 months"
+    ExpiresByType image/jpeg "access plus 6 months"
+    ExpiresByType image/gif "access plus 6 months"
+    ExpiresByType image/svg+xml "access plus 6 months"
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# Error Pages
+ErrorDocument 404 /404.html
+
+# Prevent access to sensitive files
+<Files ".htaccess">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+<Files "passwords.js">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Block access to backup files
+<FilesMatch "\.(bak|config|sql|log|sh)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

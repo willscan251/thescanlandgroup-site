@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resource Request Received | The Scanland Group</title>
+  <link rel="stylesheet" href="/assets/tsg.css">
+  <script src="https://cms.scanland.org/cms.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a href="/" class="brand">
+        <img class="logo" src="/assets/images/tsg.png" alt="TSG Logo">
+        <span class="brand-name">The Scanland Group</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="news-events.html">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html">Books</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html">Client Portal</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="dropdown-menu">
+        <a href="services.html">Services</a>
+        <a href="news-events.html">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html">Books</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html">Client Portal</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="thank-you-section">
+      <div class="thank-you-card">
+        <div class="success-icon">🔍</div>
+        <h2>We'll Find What You Need!</h2>
+        <p>Thank you for your resource request. Our team will research the best options that match your specific requirements and organizational goals.</p>
+        
+        <div class="response-timeline">
+          <h3>What Happens Next:</h3>
+          <div class="timeline-grid">
+            <div class="timeline-item">
+              <div class="timeline-number">1</div>
+              <div class="timeline-text">
+                <strong>Research Phase</strong>
+                <span>Our team identifies resources matching your needs (24-48 hours)</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-number">2</div>
+              <div class="timeline-text">
+                <strong>Curated Recommendations</strong>
+                <span>Personalized resource list delivered within 2-3 business days</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-number">3</div>
+              <div class="timeline-text">
+                <strong>Follow-up Support</strong>
+                <span>We check back to ensure the resources were helpful</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="immediate-help">
+          <h3>Need Immediate Assistance?</h3>
+          <p>For urgent resource needs or time-sensitive matters, reach out directly:</p>
+          <div class="contact-options">
+            <a href="contact.html" class="button">Contact Form</a>
+            <a href="mailto:contact@thescanlandgroup.com" class="button">Direct Email</a>
+          </div>
+        </div>
+
+        <div class="explore-existing">
+          <h3>Browse Current Resources:</h3>
+          <div class="value-grid">
+            <div class="value-item">
+              <h4>Partner Organizations</h4>
+              <p>Explore our current network of nonprofit partners and collaborators</p>
+              <a href="resources.html" class="button">View Resources</a>
+            </div>
+            <div class="value-item">
+              <h4>Free Downloads</h4>
+              <p>Access our grant writing guides and organizational templates</p>
+              <a href="books.html" class="button">Download Materials</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="resources.html" class="button" style="margin-top: 2rem;">Back to Resources</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>A <a href="https://scanland.org" target="_blank" rel="noopener">Scanland</a> Company</p>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const drop = document.querySelector('.dropdown-menu');
+
+    btn.addEventListener('click', () => {
+      drop.style.display = drop.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    document.addEventListener('click', e => {
+      if (!btn.contains(e.target) && !drop.contains(e.target)) {
+        drop.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+:root {
+  /* Clean white canvas with cool-blue accents */
+  --color-bg:        #FFFFFF;  /* bright page background */
+  --color-text:      #1F2F79;  /* deep navy primary copy */
+  --color-primary:   #8AB8E6;  /* sky-blue for banners & buttons */
+  --color-accent:    #D6E7F7;  /* ultra-light blue highlights */
+  --color-neutral:   #C9DFF3;  /* pale blue for inputs */
+  --color-footer:    #F4F9FE;  /* off-white footer */
+  --footer-hover:    #DFEFFC;  /* subtle shade for link hovers */
+  --theme-bg: url("/images/tsgbg.png");
+}

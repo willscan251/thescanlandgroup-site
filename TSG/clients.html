@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="noindex,nofollow">
+  <title>Client Portal | The Scanland Group</title>  
+  <link rel="stylesheet" href="/assets/tsg.css">
+  <link rel="stylesheet" href="/assets/clients.css">
+  <script src="/assets/passwords.js"></script>
+  <script src="https://cms.scanland.org/cms.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="/" class="brand">
+        <img class="logo" src="/assets/images/tsg.png" alt="TSG Logo">
+        <span class="brand-name">The Scanland Group</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="news-events.html">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html">Books</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html" class="active">Client Portal</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="dropdown-menu">
+        <a href="services.html">Services</a>
+        <a href="news-events.html">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html">Books</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html" class="active">Client Portal</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Enhanced Mission Box -->
+    <div class="mission-box">
+      <h2>Secure Client Portal</h2>
+      <p>Access your dedicated project dashboard with real-time updates, secure file sharing,<br>meeting schedules, and direct team communication</p>
+    </div>
+
+    <!-- Login Instructions Card -->
+    <section class="portal-section">
+      <div class="instruction-card">
+        <h3>How to Access Your Portal</h3>
+        <div class="steps-container">
+          <div class="step-item">
+            <div class="step-circle">1</div>
+            <div class="step-info">
+              <h4>Find Your Client ID</h4>
+              <p>Located in your welcome email, contract, or project correspondence.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-circle">2</div>
+            <div class="step-info">
+              <h4>Enter ID Below</h4>
+              <p>Type your Client ID exactly as provided - it's your secure access key to your personalized dashboard</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-circle">3</div>
+            <div class="step-info">
+              <h4>Access Dashboard</h4>
+              <p>Instant access to your project files, progress tracking, meeting links, and team communication</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enhanced Login Form -->
+    <section class="portal-section">
+      <div class="login-container">
+        <div class="security-header">
+          <div class="security-icon">🔒</div>
+          <h3>Secure Client Access</h3>
+          <p>Enterprise-grade security protecting your project data</p>
+        </div>
+        
+        <form id="login-form" class="enhanced-form">
+          <div class="input-section">
+            <label for="clientID">Client Identification Code</label>
+            <div class="enhanced-input">
+              <input
+                type="text"
+                id="clientID"
+                placeholder="Enter your Client ID"
+                required
+                autocomplete="off"
+              >
+              <div class="input-glow"></div>
+            </div>
+          </div>
+          
+          <div id="error-message" class="alert error hidden"></div>
+          <div id="success-message" class="alert success hidden"></div>
+          
+          <button type="submit" class="portal-submit">
+            <span class="submit-text">Access Your Portal</span>
+            <span class="submit-loading hidden">Authenticating...</span>
+            <div class="button-effect"></div>
+          </button>
+        </form>
+        
+        <div class="login-footer">
+          <div class="security-badge">
+            <span>🔐</span>
+            <span>256-bit SSL encryption • SOC 2 compliant • Data sovereignty</span>
+          </div>
+          <div class="support-links">
+            <p>Need assistance? <a href="contact.html">Contact Support</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portal Features -->
+    <section class="portal-section">
+      <div class="features-showcase">
+        <h2>Inside Your Secure Portal</h2>
+        <div class="showcase-grid">
+          <div class="showcase-card">
+            <div class="showcase-icon">📊</div>
+            <h4>Real-Time Project Dashboard</h4>
+            <p>Live progress tracking, milestone updates, deadline monitoring, and completion percentages for all project phases and deliverables.</p>
+            <ul>
+              <li>Phase completion tracking</li>
+              <li>Upcoming deadline alerts</li>
+              <li>Milestone achievement history</li>
+            </ul>
+          </div>
+          
+          <div class="showcase-card">
+            <div class="showcase-icon">📁</div>
+            <h4>Secure Document Center</h4>
+            <p>24/7 access to all project files, reports, templates, assessments, and resources with version control and download tracking.</p>
+            <ul>
+              <li>Organized file categories</li>
+              <li>Version history and updates</li>
+              <li>Download and sharing permissions</li>
+            </ul>
+          </div>
+          
+          <div class="showcase-card">
+            <div class="showcase-icon">📅</div>
+            <h4>Meeting Management Hub</h4>
+            <p>Comprehensive meeting coordination with Zoom integration, calendar syncing, agenda access, and meeting note archives.</p>
+            <ul>
+              <li>One-click Zoom meeting access</li>
+              <li>Automatic calendar integration</li>
+              <li>Meeting notes and recordings</li>
+            </ul>
+          </div>
+          
+          <div class="showcase-card">
+            <div class="showcase-icon">💬</div>
+            <h4>Direct Team Communication</h4>
+            <p>Secure messaging with your dedicated consulting team, file sharing capabilities, and priority response for urgent matters.</p>
+            <ul>
+              <li>Instant team messaging</li>
+              <li>File attachment capabilities</li>
+              <li>Priority urgent response</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Troubleshooting -->
+    <section class="portal-section">
+      <div class="help-center">
+        <h3>Trouble Accessing Your Portal?</h3>
+        <div class="help-grid">
+          <div class="help-card">
+            <h4>Getting "Invalid Client ID" Error?</h4>
+            <p><strong>Common solutions:</strong></p>
+            <ul>
+              <li>Check spelling and capitalization</li>
+              <li>Ensure no extra spaces before/after</li>
+              <li>Verify letters and numbers are correct</li>
+              <li>Try both lowercase and original format</li>
+            </ul>
+            <p class="help-note">Client IDs are case-sensitive and must match exactly.</p>
+          </div>
+          
+          <div class="help-card">
+            <h4>First Time Logging In?</h4>
+            <p><strong>Setup timeline:</strong></p>
+            <ul>
+              <li>Portal activation: 24-48 hours after welcome email</li>
+              <li>Initial dashboard setup: Within 2 business days</li>
+              <li>Full project data: Added as work progresses</li>
+              <li>Meeting links: Available before first scheduled call</li>
+            </ul>
+            <p class="help-note">New client portals are customized for each engagement.</p>
+          </div>
+        </div>        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>A <a href="https://scanland.org" target="_blank" rel="noopener">Scanland</a> Company</p>
+  </footer>
+
+  <script>
+    // Mobile menu functionality
+    const btn = document.querySelector('.menu-toggle');
+    const drop = document.querySelector('.dropdown-menu');
+
+    btn.addEventListener('click', () => {
+      drop.style.display = drop.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    document.addEventListener('click', e => {
+      if (!btn.contains(e.target) && !drop.contains(e.target)) {
+        drop.style.display = 'none';
+      }
+    });
+
+    // Client Portal Login Handler
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const clientInput = document.getElementById('clientID');
+      const errorMsg = document.getElementById('error-message');
+      const successMsg = document.getElementById('success-message');
+      const submitBtn = document.querySelector('.portal-submit');
+      const submitText = submitBtn.querySelector('.submit-text');
+      const submitLoading = submitBtn.querySelector('.submit-loading');
+      
+      const clientId = clientInput.value.trim().toLowerCase();
+      
+      // Clear messages
+      errorMsg.classList.add('hidden');
+      successMsg.classList.add('hidden');
+      
+      // Show loading
+      submitText.classList.add('hidden');
+      submitLoading.classList.remove('hidden');
+      submitBtn.disabled = true;
+      
+      setTimeout(() => {
+        // Use the external authentication functions
+        if (validateClientCredentials(clientId)) {
+          const clientPage = getClientPage(clientId);
+          const clientName = getClientName(clientId);
+          
+          successMsg.textContent = `Authentication successful! Redirecting to ${clientName} dashboard...`;
+          successMsg.classList.remove('hidden');
+          
+          setTimeout(() => {
+            window.location.href = `clients/${clientPage}.html`;
+          }, 2000);
+        } else {
+          errorMsg.textContent = 'Invalid Client ID. Please verify your credentials and try again. Contact support if you continue having issues.';
+          errorMsg.classList.remove('hidden');
+          
+          // Reset form
+          submitText.classList.remove('hidden');
+          submitLoading.classList.add('hidden');
+          submitBtn.disabled = false;
+        }
+      }, 1500);
+    });
+  </script>
+</body>
+</html>

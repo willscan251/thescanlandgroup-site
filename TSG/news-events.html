@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News &amp; Events | The Scanland Group</title>
+  <link rel="stylesheet" href="/assets/tsg.css">
+  <script src="https://cms.scanland.org/cms.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a href="/" class="brand">
+        <img class="logo" src="/assets/images/tsg.png" alt="TSG Logo">
+        <span class="brand-name">The Scanland Group</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="news-events.html" class="active">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html">Books</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html">Client Portal</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="dropdown-menu">
+        <a href="services.html">Services</a>
+        <a href="news-events.html" class="active">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html">Books</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html">Client Portal</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="mission-box">
+      <h2>News &amp; Events</h2>
+      <p>
+        The latest updates, announcements, and upcoming happenings for<br>The Scanland Group.
+      </p>
+    </div>
+
+    <!-- Announcements Grid -->
+    <section class="news-section">
+      <div class="news-grid">
+        <!-- Summit Card (left) -->
+        <!--<div class="event-card">
+          <img src="assets/images/sacnp.png" alt="Summit" class="event-image">
+          <h2>2025 South Alabama Nonprofit Summit</h2>
+          <p><strong>Date:</strong> Thursday, July 17, 2025<br>
+             <strong>Time:</strong> 8:30 AM – 3:30 PM<br>
+             <strong>Location:</strong> Spring Hill College, Barter Student Center, Mobile, AL</p>
+          <br>
+          <p>Join us for the annual South Alabama Nonprofit Summit—Thursday, July 17, 2025 at Spring Hill College—for a day of learning, networking, and inspiration with nonprofit leaders across the region.</p>
+          <div class="event-buttons">
+            <a href="savedate.pdf" class="button">Save The Date</a>
+            <a href="https://sacnp.org/" class="button">SACNP Website</a>
+            <a href="summitschedule.pdf" class="button">Official Schedule</a>
+            <a href="sponsor.pdf" class="button">Sponsorship Form</a>
+          </div>
+        </div>
+
+        <!-- Podcast Coming Soon Card -->
+        <div class="event-card">
+          <img src="/assets/images/missiondriven.png" alt="Mission-Driven Momentum Podcast" class="event-image">
+          <h2>Mission-Driven Momentum: <br>Nonprofits, Leadership &amp; Growth</h2>
+          <p><strong>Launch Date:</strong> TBA</p><br>
+          <p>Our flagship podcast for<br>purpose-driven leaders and nonprofit innovators.<br> Coming Soon. Stay tuned!</p>
+          <div class="event-buttons">
+            <a href="podcast-blog.html" class="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <!--<section class="newsletter-signup">
+      <h3>Stay Connected</h3>
+      <p>Get the latest news, event announcements, and nonprofit insights delivered to your inbox.</p>
+      <form class="newsletter-form" action="https://formspree.io/f/mjkegyea" method="POST">
+        <input type="hidden" name="Note" value="Newsletter subscription from TSG News & Events page">
+        <input type="hidden" name="_next" value="/newsletter-thanks">
+        <input type="email" name="Email" placeholder="Enter your email address" required>
+        <input type="hidden" name="Subject" value="Newsletter Subscription">
+        <input type="hidden" name="Message" value="Please add this email to the TSG newsletter list">
+        <button type="submit" class="button">Subscribe</button>
+      </form>
+      <p class="privacy-note">We respect your privacy. Updates are sent monthly and you can unsubscribe anytime.</p>
+    </section>
+  </main> -->
+
+  <footer>
+    <p>A <a href="https://scanland.org">Scanland</a> Company</p>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const drop = document.querySelector('.dropdown-menu');
+
+    btn.addEventListener('click', () => {
+      drop.style.display = drop.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    document.addEventListener('click', e => {
+      if (!btn.contains(e.target) && !drop.contains(e.target)) {
+        drop.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

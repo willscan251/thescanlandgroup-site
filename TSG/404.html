@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | The Scanland Group</title>
+  <link rel="stylesheet" href="/assets/tsg.css">
+  <script src="https://cms.scanland.org/cms.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a href="/" class="brand">
+        <img class="logo" src="/assets/images/tsg.png" alt="TSG Logo">
+        <span class="brand-name">The Scanland Group</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="news-events.html">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html">Books</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html">Client Portal</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="dropdown-menu">
+        <a href="services.html">Services</a>
+        <a href="news-events.html">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html">Books</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html">Client Portal</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="error-section">
+      <div class="error-display">
+        <div class="error-number">404</div>
+        
+        <div class="error-animation">
+          <div class="missing-piece"></div>
+          <div class="search-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="error-message">
+        <h1>Oops! Page Not Found</h1>
+        <p>It looks like the page you're looking for has moved, been renamed, or doesn't exist. Don't worry—we'll help you find what you need or get you back on track.</p>
+      </div>
+    </section>
+
+    <!-- Quick Suggestions -->
+    <section class="quick-suggestions">
+      <h3>Let's Get You Where You Need to Go</h3>
+      <div class="suggestions-grid">
+        <div class="suggestion-card">
+          <div class="suggestion-icon">🏠</div>
+          <h4>Start Fresh</h4>
+          <p>Head back to our homepage and explore from there</p>
+          <a href="tsg.html" class="button">Go Home</a>
+        </div>
+        
+        <div class="suggestion-card">
+          <div class="suggestion-icon">🔍</div>
+          <h4>Explore Services</h4>
+          <p>Discover how we help mission-driven organizations thrive</p>
+          <a href="services.html" class="button">View Services</a>
+        </div>
+        
+        <div class="suggestion-card">
+          <div class="suggestion-icon">📚</div>
+          <h4>Free Resources</h4>
+          <p>Download our grant writing guide and organizational tools</p>
+          <a href="books.html" class="button">Get Resources</a>
+        </div>
+        
+        <div class="suggestion-card">
+          <div class="suggestion-icon">💬</div>
+          <h4>Get in Touch</h4>
+          <p>Tell us what you were looking for—we're here to help</p>
+          <a href="contact.html" class="button">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Options -->
+    <section class="navigation-options">
+      <div class="nav-card">
+        <h3>Browse Our Site</h3>
+        <div class="destinations-grid">
+          <a href="services.html" class="destination-link">
+            <strong>Services</strong>
+            <span>Strategic planning, grant writing, coaching</span>
+          </a>
+          <a href="news-events.html" class="destination-link">
+            <strong>News & Events</strong>
+            <span>Latest updates and upcoming happenings</span>
+          </a>
+          <a href="podcast-blog.html" class="destination-link">
+            <strong>Podcast & Blog</strong>
+            <span>Mission-Driven Momentum and insights</span>
+          </a>
+          <a href="testimonials.html" class="destination-link">
+            <strong>Success Stories</strong>
+            <span>Client testimonials and case studies</span>
+          </a>
+          <a href="resources.html" class="destination-link">
+            <strong>Resources</strong>
+            <span>Partner organizations and tools</span>
+          </a>
+          <a href="clients.html" class="destination-link">
+            <strong>Client Portal</strong>
+            <span>Secure access for existing clients</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>A <a href="https://scanland.org" target="_blank" rel="noopener">Scanland</a> Company</p>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const drop = document.querySelector('.dropdown-menu');
+
+    btn.addEventListener('click', () => {
+      drop.style.display = drop.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    document.addEventListener('click', e => {
+      if (!btn.contains(e.target) && !drop.contains(e.target)) {
+        drop.style.display = 'none';
+      }
+    });
+
+    // Easter egg: Konami code for momentum boost
+    let konamiCode = [];
+    const sequence = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+    
+    document.addEventListener('keydown', function(e) {
+      konamiCode.push(e.keyCode);
+      if (konamiCode.length > sequence.length) {
+        konamiCode.shift();
+      }
+      
+      if (konamiCode.join('') === sequence.join('')) {
+        const errorNumber = document.querySelector('.error-number');
+        errorNumber.style.transform = 'rotate(360deg) scale(1.2)';
+        errorNumber.style.background = 'linear-gradient(45deg, #FF6B35, #F7931E, #FFD23F)';
+        errorNumber.style.backgroundSize = '400% 400%';
+        errorNumber.style.animation = 'rainbow 2s ease infinite';
+        
+        setTimeout(() => {
+          alert("You found the secret! Real momentum isn't magic—it's made. And apparently, so are Easter eggs!");
+        }, 1000);
+      }
+    });
+
+    // Fun click interaction on the 404 number
+    document.querySelector('.error-number').addEventListener('click', function() {
+      this.style.transform = 'rotate(180deg) scale(0.8)';
+      setTimeout(() => {
+        this.style.transform = 'rotate(0deg) scale(1)';
+      }, 300);
+    });
+
+    // Animate the missing piece on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const missingPiece = document.querySelector('.missing-piece');
+      setTimeout(() => {
+        missingPiece.style.transform = 'rotate(45deg)';
+      }, 1000);
+      
+      setTimeout(() => {
+        missingPiece.style.transform = 'rotate(0deg)';
+      }, 1500);
+    });
+  </script>
+</body>
+</html>

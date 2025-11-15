@@ -1,0 +1,119 @@
+<!-- ========== ADMIN-2025.HTML ========== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Admin Dashboard | The Scanland Group</title>
+  <link rel="stylesheet" href="/assets/tsg.css">
+  <link rel="stylesheet" href="/assets/clients.css">
+  <script src="/assets/passwords.js"></script>
+  <script src="https://cms.scanland.org/cms.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="/tsg.html" class="brand">
+        <img class="logo" src="/assets/images/tsg.png" alt="TSG Logo">
+        <span class="brand-name">The Scanland Group</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="admin-header">
+      <h1>The Scanland Group</h1>
+      <p>Client Admin Dashboard</p><br>
+      <a href="/clients.html" class="action-button">Client Portal</a>
+    </div>
+
+      <div class="client-grid">
+        <a href="/clients/acf-7428.html" class="admin-client-card">
+          <div class="client-name">Alabama Coastal Foundation</div>
+          <div class="client-id">ACF-7428</div>
+        </a>
+
+        <a href="/clients/arc-2214.html" class="admin-client-card">
+          <div class="client-name">Baldwin ARC</div>
+          <div class="client-id">ARC-2214</div>
+        </a>
+
+        <a href="/clients/ccc-9007.html" class="admin-client-card">
+          <div class="client-name">Community Connect CDC</div>
+          <div class="client-id">CCC-9007</div>
+        </a>
+
+        <a href="/clients/csvr-6048.html" class="admin-client-card">
+          <div class="client-name">CSVR</div>
+          <div class="client-id">CSVR-6048</div>
+        </a>
+
+        <a href="/clients/dfg-5391.html" class="admin-client-card">
+          <div class="client-name">Destined for Greatness</div>
+          <div class="client-id">DFG-5391</div>
+        </a>
+
+        <a href="/clients/loc-9157.html" class="admin-client-card">
+          <div class="client-name">LOC</div>
+          <div class="client-id">LOC-9157</div>
+        </a>
+
+        <a href="/clients/lov-4836.html" class="admin-client-card">
+          <div class="client-name">LOV</div>
+          <div class="client-id">LOV-4836</div>
+        </a>
+
+        <a href="/clients/lth-9396.html" class="admin-client-card">
+          <div class="client-name">The Lighthouse</div>
+          <div class="client-id">LTH-9396</div>
+        </a>
+
+        <a href="/clients/mla-2051.html" class="admin-client-card">
+          <div class="client-name">MercyLife of Alabama</div>
+          <div class="client-id">MLA-2051</div>
+        </a>
+
+        <a href="/clients/mbe-3603.html" class="admin-client-card">
+          <div class="client-name">Mobile Bay Enthusiasm</div>
+          <div class="client-id">MBE-3603</div>
+        </a>
+
+        <a href="/clients/sans-6183.html" class="admin-client-card">
+          <div class="client-name">South Alabama Nonprofit Summit</div>
+          <div class="client-id">SANS-6183</div>
+        </a>
+
+        <a href="/clients/stp-9906.html" class="admin-client-card">
+          <div class="client-name">The Steeple</div>
+          <div class="client-id">STP-9906</div>
+        </a>
+
+        <a href="/clients/tkg-7869.html" class="admin-client-card">
+          <div class="client-name">TU-CSLA Project</div>
+          <div class="client-id">TKG-7869</div>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>A <a href="https://scanland.org" target="_blank" rel="noopener">Scanland</a> Company</p>
+  </footer>
+
+  <script>
+    console.log('Admin Dashboard Loaded - ' + new Date());
+    
+    document.querySelectorAll('.portal-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        console.log('Admin accessed:', e.target.closest('.admin-client-card').querySelector('.client-name').textContent);
+      });
+    });
+  </script>
+</body>
+</html>

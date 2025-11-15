@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Newsletter Subscription Confirmed | The Scanland Group</title>
+  <link rel="stylesheet" href="assets/tsg.css">
+  <script src="https://cms.scanland.org/cms.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a href="/" class="brand">
+        <img class="logo" src="assets/images/tsg.png" alt="TSG Logo">
+        <span class="brand-name">The Scanland Group</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="/services">Services</a>
+        <a href="/news-events">News & Events</a>
+        <a href="/podcast-blog">Podcast & Blog</a>
+        <a href="/books">Books</a>
+        <a href="/resources">Resources</a>
+        <a href="/testimonials">Testimonials</a>
+        <a href="/clients">Client Portal</a>
+        <a href="/contact">Contact</a>
+      </nav>
+      <div class="dropdown-menu">
+        <a href="/services">Services</a>
+        <a href="/news-events">News & Events</a>
+        <a href="/podcast-blog">Podcast & Blog</a>
+        <a href="/books">Books</a>
+        <a href="/resources">Resources</a>
+        <a href="/testimonials">Testimonials</a>
+        <a href="/clients">Client Portal</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="thank-you-section">
+      <div class="thank-you-card">
+        <div class="success-icon">✓</div>
+        <h2>You're Subscribed!</h2>
+        <p>Welcome to our newsletter community. You'll receive monthly updates with nonprofit insights, event announcements, and valuable resources to help your organization thrive.</p>
+        
+        <div class="subscription-details">
+          <h3>What You'll Receive:</h3>
+          <div class="value-grid">
+            <div class="value-item">
+              <h4>Strategic Insights</h4>
+              <p>Monthly nonprofit leadership and organizational development tips</p>
+            </div>
+            <div class="value-item">
+              <h4>Funding Opportunities</h4>
+              <p>Grant alerts and funding announcements relevant to your mission</p>
+            </div>
+            <div class="value-item">
+              <h4>Early Event Access</h4>
+              <p>Priority registration for workshops, summits, and training sessions</p>
+            </div>
+            <div class="value-item">
+              <h4>Free Resources</h4>
+              <p>Exclusive templates, guides, and tools for nonprofit success</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="next-steps">
+          <h3>Get Immediate Value:</h3>
+          <div class="value-grid">
+            <div class="value-item">
+              <h4>Download Our Grant Guide</h4>
+              <p>Start with our comprehensive grant writing resource</p>
+              <a href="/books" class="button">Download Free</a>
+            </div>
+            <div class="value-item">
+              <h4>Explore Our Services</h4>
+              <p>See how we help organizations thrive</p>
+              <a href="/services" class="button">View Services</a>
+            </div>
+            <div class="value-item">
+              <h4>Schedule Consultation</h4>
+              <p>Ready to discuss your specific needs?</p>
+              <a href="/contact" class="button">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-follow">
+          <h3>Follow for Daily Updates</h3>
+          <p>Stay connected between newsletters for insights and announcements</p>
+          <div class="social-links">
+            <a href="https://linkedin.com/company/thescanlandgroup" target="_blank" class="button">LinkedIn</a>
+            <a href="https://facebook.com/thescanlandgroup" target="_blank" class="button">Facebook</a>
+            <a href="https://instagram.com/thescanlandgroup" target="_blank" class="button">Instagram</a>
+          </div>
+        </div>
+
+        <a href="/news-events" class="button" style="margin-top: 2rem;">Back to News & Events</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>A <a href="https://scanland.org" target="_blank" rel="noopener">Scanland</a> Company</p>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const drop = document.querySelector('.dropdown-menu');
+
+    btn.addEventListener('click', () => {
+      drop.style.display = drop.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    document.addEventListener('click', e => {
+      if (!btn.contains(e.target) && !drop.contains(e.target)) {
+        drop.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

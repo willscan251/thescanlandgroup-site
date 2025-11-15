@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Books | The Scanland Group</title>
+  <link rel="stylesheet" href="/assets/tsg.css">
+  <script src="https://cms.scanland.org/cms.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a href="/" class="brand">
+        <img class="logo" src="/assets/images/tsg.png" alt="TSG Logo">
+        <span class="brand-name">The Scanland Group</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="news-events.html">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html" class="active">Books</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html">Client Portal</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="dropdown-menu">
+        <a href="services.html">Services</a>
+        <a href="news-events.html">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html" class="active">Books</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html">Client Portal</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="section-heading">Books</h2>
+
+    <div class="book-grid">
+      <div class="book-item">
+        <img src="/assets/images/basicsgrantwriting.png" alt="The Basics of Grant Writing">
+        <div class="book-content">
+          <h3>The Basics of Grant Writing:<br>A Step-By-Step Guide</h3>
+          <p>
+            This comprehensive guide provides a clear, actionable approach to grant writing for nonprofits and small businesses. Learn how to craft persuasive proposals that secure funding and drive your mission forward.<br><br>
+            Note: The Physical Copy is currently out of stock. We will have it back in stock soon. Please refer to our Ebook in the meantime. Thanks!
+          </p>
+          <div class="button-group">
+            <a href="#" class="button disabled" style="opacity: 0.6;">Physical Copy - Out of Stock</a>
+            <a href="https://a.co/d/7aB15kK" class="button">Ebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-soon-box">
+      <p>More books are coming soon—stay tuned!</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>A <a href="https://scanland.org" target="_blank" rel="noopener">Scanland</a> Company</p>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const drop = document.querySelector('.dropdown-menu');
+
+    btn.addEventListener('click', () => {
+      drop.style.display = drop.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    document.addEventListener('click', e => {
+      if (!btn.contains(e.target) && !drop.contains(e.target)) {
+        drop.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

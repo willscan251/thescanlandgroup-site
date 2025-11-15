@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | The Scanland Group</title>
+  <link rel="stylesheet" href="/assets/tsg.css">
+  <script src="https://cms.scanland.org/cms.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a href="/" class="brand">
+        <img class="logo" src="/assets/images/tsg.png" alt="TSG Logo">
+        <span class="brand-name">The Scanland Group</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="news-events.html">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html">Books</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html">Client Portal</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="dropdown-menu">
+        <a href="services.html">Services</a>
+        <a href="news-events.html">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html">Books</a>
+        <a href="resources.html">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html">Client Portal</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top:5rem;">
+    <!-- Mission Box Banner -->
+    <div class="mission-box">
+      <h2>Contact Us</h2>
+      <p>This is where momentum begins—reach out and let's take the next step together.</p>
+    </div>
+
+    <!-- Response Time Info -->
+    <section class="response-info">
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Quick Response</h3>
+          <p>We typically respond within 24 hours during business days. For urgent matters, mark your subject as "URGENT".</p>
+        </div>
+        <div class="info-card">
+          <h3>Free Consultation</h3>
+          <p>Every inquiry starts with a complimentary 30-minute discovery call to discuss your specific needs and goals.</p>
+        </div>
+        <div class="info-card">
+          <h3>Service Area</h3>
+          <p>Based in Alabama, serving the Gulf Coast region with virtual consultations available nationwide.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section with Toggle -->
+    <section class="contact-section">
+      <!-- Panel for the toggle button -->
+      <div class="contact-panel">
+        <div class="contact-trigger">
+          <span>Contact<br>The Scanland Group</span>
+          <div class="triangle"></div>
+        </div>
+      </div>
+
+      <!-- Hidden form -->
+      <div class="contact-body">
+        <form action="https://formspree.io/f/xjkwlnpy" method="POST">
+          <input type="hidden" name="Note" value="This message was sent from the contact page for The Scanland Group.">
+          <input type="hidden" name="_next" value="/thanks">
+          
+          <div class="form-row">
+            <input type="text" name="Name" placeholder="Name" required/>
+            <input type="email" name="Email" placeholder="Email" required/>
+          </div>
+          
+          <div class="form-row">
+            <input type="text" name="Organization" placeholder="Organization (Optional)"/>
+            <input type="tel" name="Phone" placeholder="Phone (Optional)"/>
+          </div>
+          
+          <select name="Services" class="form-select">
+            <option value="">Services Interested In...</option>
+            <option value="Strategic Planning">Strategic Planning</option>
+            <option value="Grant Writing">Grant Writing & Fund Development</option>
+            <option value="Executive Coaching">Executive Coaching</option>
+            <option value="Board Training">Board Training & Development</option>
+            <option value="Organizational Assessment">Organizational Assessment</option>
+            <option value="Nonprofit Certification">Nonprofit Certification</option>
+            <option value="Training & Events">Corporate Training & Events</option>
+            <option value="Communications">Communications & Marketing</option>
+            <option value="Technology">Technology & Innovation</option>
+            <option value="Mental Health Training">Mental Health First Aid Training</option>
+            <option value="Multiple Services">Multiple Services</option>
+            <option value="Not Sure">Not Sure - Need Consultation</option>
+          </select>
+          
+          <select name="Timeline" class="form-select">
+            <option value="">Project Timeline...</option>
+            <option value="Immediate">Immediate (Within 2 weeks)</option>
+            <option value="1 Month">Within 1 month</option>
+            <option value="3 Months">Within 3 months</option>
+            <option value="6 Months">Within 6 months</option>
+            <option value="Planning Ahead">Planning ahead (6+ months)</option>
+            <option value="Just Exploring">Just exploring options</option>
+          </select>
+          
+          <input type="text" name="Subject" placeholder="Subject" required/>
+          <textarea name="Message" placeholder="Tell us about your organization, current challenges, and what you hope to achieve..." required></textarea>
+          
+          <div class="form-checkbox">
+            <label>
+              <input type="checkbox" name="Newsletter" value="Yes">
+              <span class="checkmark"></span>
+              I'd like to receive updates about TSG resources and events
+            </label>
+          </div>
+          
+          <button type="submit" class="submit-btn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-spinner hidden">Sending...</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Social Media Box -->
+    <div class="social-box">
+      <h3>Connect with Us</h3>
+      <ul class="social-list">
+        <li>
+          <a href="https://linkedin.com/company/thescanlandgroup" target="_blank" aria-label="LinkedIn">
+            <img src="/assets/images/linkedin.png" alt="LinkedIn logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com/thescanlandgroup" target="_blank" aria-label="Facebook">
+            <img src="/assets/images/facebook.png" alt="Facebook logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/thescanlandgroup" target="_blank" aria-label="Instagram">
+            <img src="/assets/images/instagram.png" alt="Instagram logo">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Team Direct Contact -->
+    <section class="team-contact">
+      <h3>Connect Directly with Our Team</h3>
+      <div class="team-grid-contact">
+        <div class="team-contact-card">
+          <img src="/assets/images/pat.png" alt="Pat Scanland" class="contact-avatar">
+          <h4>Pat Scanland</h4>
+          <p>Strategic Planning & Grant Writing</p>
+          <a href="https://www.linkedin.com/in/patscanland" class="button" target="_blank">LinkedIn</a>
+        </div>
+        <div class="team-contact-card">
+          <img src="/assets/images/danny.png" alt="Danny Patterson" class="contact-avatar">
+          <h4>Danny Patterson</h4>
+          <p>Organizational Development</p>
+          <a href="https://www.linkedin.com/in/dannykpatterson" class="button" target="_blank">LinkedIn</a>
+        </div>
+        <div class="team-contact-card">
+          <img src="/assets/images/will.png" alt="Will Scanland" class="contact-avatar">
+          <h4>Will Scanland</h4>
+          <p>Technology & Innovation</p>
+          <a href="https://www.linkedin.com/in/williamscanland" class="button" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>A <a href="https://scanland.org" target="_blank" rel="noopener">Scanland</a> Company</p>
+  </footer>
+
+  <!-- Toggle Script -->
+  <script>
+    document.querySelector('.contact-trigger').addEventListener('click', () => {
+      document.querySelector('.contact-section').classList.toggle('open');
+    });
+  </script>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const drop = document.querySelector('.dropdown-menu');
+
+    btn.addEventListener('click', () => {
+      drop.style.display = drop.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    document.addEventListener('click', e => {
+      if (!btn.contains(e.target) && !drop.contains(e.target)) {
+        drop.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

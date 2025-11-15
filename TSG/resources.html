@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resources | The Scanland Group</title>
+  <link rel="stylesheet" href="/assets/tsg.css">
+  <script src="https://cms.scanland.org/cms.js"></script>
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a href="/" class="brand">
+        <img class="logo" src="/assets/images/tsg.png" alt="TSG Logo">
+        <span class="brand-name">The Scanland Group</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="services.html">Services</a>
+        <a href="news-events.html">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html">Books</a>
+        <a href="resources.html" class="active">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html">Client Portal</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="dropdown-menu">
+        <a href="services.html">Services</a>
+        <a href="news-events.html">News & Events</a>
+        <a href="podcast-blog.html">Podcast & Blog</a>
+        <a href="books.html">Books</a>
+        <a href="resources.html" class="active">Resources</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="clients.html">Client Portal</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="section-heading">Third-Party Resources</h2>
+
+    <!-- Third Party Resources -->
+    <div class="resource-section">
+      <!-- Card 1 -->
+      <div class="resource-card">
+        <h3>Alabama Association of Nonprofits</h3>
+        <p>
+          A membership organization advancing Alabama's nonprofit sector through training, advocacy, and group-purchasing benefits.
+        </p>
+        <a href="https://www.alabamanonprofits.org/" target="_blank" class="button">
+          Website
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="resource-card">
+        <h3>South Alabama Coalition of Nonprofits</h3>
+        <p>
+          A regional network that connects and empowers South Alabama nonprofits via summits, monthly meetings, and engagement with elected officials.
+        </p>
+        <a href="https://sacnp.org/" target="_blank" class="button">
+          Website
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="resource-card">
+        <h3>Fuse Factory</h3>
+        <p>
+          A nonprofit coworking space in downtown Mobile offering affordable office amenities and a community for public-purpose organizations.
+        </p>
+        <a href="https://www.fusefactory.org/" target="_blank" class="button">
+          Website
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="resource-card">
+        <h3>Innovation Portal</h3>
+        <p>
+          A nonprofit incubator and innovation hub that accelerates startup growth across Southwest Alabama and the central Gulf Coast.
+        </p>
+        <a href="https://innovation-portal.com" target="_blank" class="button">
+          Website
+        </a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="resource-card">
+        <h3>BoardSource</h3>
+        <p>
+          The leading membership organization strengthening nonprofit governance through training, research, and best-practice resources.
+        </p>
+        <a href="https://boardsource.org" target="_blank" class="button">
+          Website
+        </a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="resource-card">
+        <h3>Community Resource Network</h3>
+        <p>
+          A collaborative forum of nonprofits, schools, government, and faith groups that meets year-round to share resources and coordinate community initiatives.
+        </p>
+        <a
+          href="https://www.southalabama.edu/departments/communityengagement/community-resource-network.html"
+          target="_blank"
+          class="button"
+        >
+          Website
+        </a>
+      </div>
+    </div>
+
+    <!-- Resource Request -->
+    <section class="resource-request">
+      <h2>Need a Resource<br>We Haven't Mentioned?</h2>
+      <p>We're always expanding our network. Let us know what would be helpful for your organization.</p>
+      <form action="https://formspree.io/f/mdklagvk" method="POST" class="request-form">
+        <input type="hidden" name="Note" value="Resource request from TSG Resources page">
+        <input type="hidden" name="Subject" value="Resource Request">
+        <input type="hidden" name="_next" value="/resource-thanks">
+        <div class="form-row">
+          <input type="text" name="Resource" placeholder="Resource or organization name" required>
+          <input type="email" name="Email" placeholder="Your email" required>
+        </div>
+        <textarea name="Message" placeholder="Tell us more about what you're looking for..." rows="3" required></textarea>
+        <button type="submit" class="button">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>A <a href="https://scanland.org" target="_blank" rel="noopener">Scanland</a> Company</p>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const drop = document.querySelector('.dropdown-menu');
+
+    btn.addEventListener('click', () => {
+      drop.style.display = drop.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    document.addEventListener('click', e => {
+      if (!btn.contains(e.target) && !drop.contains(e.target)) {
+        drop.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
