@@ -36,7 +36,7 @@
         <a href="books.html">Books</a>
         <a href="resources.html">Resources</a>
         <a href="testimonials.html">Testimonials</a>
-        <a href="clients.html">Client Portal</a>
+        <!-- Client Portal hidden until Harbor is ready: <a href="clients.html">Client Portal</a> -->
         <a href="contact.html">Contact</a>
       </nav>
       <div class="dropdown-menu">
@@ -46,7 +46,7 @@
         <a href="books.html">Books</a>
         <a href="resources.html">Resources</a>
         <a href="testimonials.html">Testimonials</a>
-        <a href="clients.html">Client Portal</a>
+        <!-- Client Portal hidden until Harbor is ready: <a href="clients.html">Client Portal</a> -->
         <a href="contact.html">Contact</a>
       </div>
     </div>
@@ -93,21 +93,33 @@
       </div>
     </section>
 
-    <!-- Newsletter Signup -->
-    <!--<section class="newsletter-signup">
+    <!-- Newsletter Signup. Posts into the Strategy in Motion list in Zoho
+         Campaigns. Submits to the hidden iframe so the visitor stays put. -->
+    <section class="newsletter-signup">
       <h3>Stay Connected</h3>
-      <p>Get the latest news, event announcements, and nonprofit insights delivered to your inbox.</p>
-      <form class="newsletter-form" action="https://formspree.io/f/mjkegyea" method="POST">
-        <input type="hidden" name="Note" value="Newsletter subscription from TSG News & Events page">
-        <input type="hidden" name="_next" value="/newsletter-thanks">
-        <input type="email" name="Email" placeholder="Enter your email address" required>
-        <input type="hidden" name="Subject" value="Newsletter Subscription">
-        <input type="hidden" name="Message" value="Please add this email to the TSG newsletter list">
+      <p>News and insights for nonprofit leaders.</p>
+      <form class="newsletter-form" id="newsletter-form" method="POST" target="zcSignup"
+            action="https://anrcr-zgph.maillist-manage.net/weboptin.zc">
+        <input type="text" name="LASTNAME" placeholder="Your name">
+        <input type="email" name="CONTACT_EMAIL" placeholder="Your email address" required>
+        <input type="hidden" name="submitType" value="optinCustomView">
+        <input type="hidden" name="emailReportId" value="">
+        <input type="hidden" name="formType" value="QuickForm">
+        <input type="hidden" name="zx" value="135bffd9e">
+        <input type="hidden" name="zcvers" value="3.0">
+        <input type="hidden" name="oldListIds" value="">
+        <input type="hidden" name="mode" value="OptinCreateView">
+        <input type="hidden" name="zcld" value="1156b347af4ac1eb4">
+        <input type="hidden" name="zctd" value="1156b347af4ab4f79">
+        <input type="hidden" name="zc_trackCode" value="ZCFORMVIEW">
+        <input type="hidden" name="zc_formIx" value="3z88d70b1d21b97684cea7243fc231f41ce1abd84cc6644935f047fdef2b300e74">
+        <input type="hidden" name="viewFrom" value="URL_ACTION">
         <button type="submit" class="button">Subscribe</button>
       </form>
-      <p class="privacy-note">We respect your privacy. Updates are sent monthly and you can unsubscribe anytime.</p>
+      <iframe name="zcSignup" title="Newsletter signup" style="display:none" aria-hidden="true"></iframe>
+      <p class="privacy-note">Unsubscribe anytime.</p>
     </section>
-  </main> -->
+  </main>
 
   <footer>
     <p>A <a href="https://scanland.org">Scanland</a> Company</p>
