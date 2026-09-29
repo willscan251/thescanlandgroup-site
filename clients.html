@@ -32,24 +32,26 @@
       </a>
       <button class="menu-toggle" aria-label="Toggle menu">☰</button>
       <nav class="nav-links">
-        <a href="services.html">Services</a>
-        <a href="news-events.html">News & Events</a>
-        <a href="podcast-blog.html">Podcast & Blog</a>
-        <a href="books.html">Books</a>
-        <a href="resources.html">Resources</a>
-        <a href="testimonials.html">Testimonials</a>
-        <!-- Client Portal hidden until Harbor is ready: <a href="clients.html" class="active">Client Portal</a> -->
-        <a href="contact.html">Contact</a>
+        <a href="/services">Services</a>
+        <a href="/news-events">News & Events</a>
+        <a href="/podcast-blog">Podcast & Blog</a>
+        <a href="/books">Books</a>
+        <a href="/resources">Resources</a>
+        <a href="/testimonials">Testimonials</a>
+        <!-- Courses hidden until launch: <a href="https://courses.thescanlandgroup.com">Courses</a> -->
+        <!-- Client Portal hidden until Harbor is ready: <a href="/clients" class="active">Client Portal</a> -->
+        <a href="/contact">Contact</a>
       </nav>
       <div class="dropdown-menu">
-        <a href="services.html">Services</a>
-        <a href="news-events.html">News & Events</a>
-        <a href="podcast-blog.html">Podcast & Blog</a>
-        <a href="books.html">Books</a>
-        <a href="resources.html">Resources</a>
-        <a href="testimonials.html">Testimonials</a>
-        <!-- Client Portal hidden until Harbor is ready: <a href="clients.html" class="active">Client Portal</a> -->
-        <a href="contact.html">Contact</a>
+        <a href="/services">Services</a>
+        <a href="/news-events">News & Events</a>
+        <a href="/podcast-blog">Podcast & Blog</a>
+        <a href="/books">Books</a>
+        <a href="/resources">Resources</a>
+        <a href="/testimonials">Testimonials</a>
+        <!-- Courses hidden until launch: <a href="https://courses.thescanlandgroup.com">Courses</a> -->
+        <!-- Client Portal hidden until Harbor is ready: <a href="/clients" class="active">Client Portal</a> -->
+        <a href="/contact">Contact</a>
       </div>
     </div>
   </header>
@@ -131,7 +133,7 @@
             <span>256-bit SSL encryption • SOC 2 compliant • Data sovereignty</span>
           </div>
           <div class="support-links">
-            <p>Need assistance? <a href="contact.html">Contact Support</a></p>
+            <p>Need assistance? <a href="/contact">Contact Support</a></p>
           </div>
         </div>
       </div>
@@ -273,7 +275,7 @@
           successMsg.classList.remove('hidden');
           
           setTimeout(() => {
-            window.location.href = `clients/${clientPage}.html`;
+            window.location.href = `/clients/${clientPage}`;
           }, 2000);
         } else {
           errorMsg.textContent = 'Invalid Client ID. Please verify your credentials and try again. Contact support if you continue having issues.';

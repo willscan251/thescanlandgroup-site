@@ -1,0 +1,16 @@
+{
+  // Local preview that works like the live site: /services opens services.html.
+  // Run it from Terminal > Run Task > "Preview site". It opens http://localhost:4000
+  // in your browser and reloads the page when you save.
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Preview site",
+      "type": "shell",
+      "command": "npx --yes browser-sync@3 start --server --extensions html --files \"*.html, assets/**/*\" --no-notify --no-ui --port 4000",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    }
+  ]
+}

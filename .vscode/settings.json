@@ -1,0 +1,4 @@
+{
+  // Live Server can't open links without ".html". Use Terminal > Run Task > "Preview site" instead.
+  "liveServer.settings.port": 5501
+}

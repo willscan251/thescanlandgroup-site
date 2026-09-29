@@ -2081,7 +2081,7 @@ footer a:hover {
 /* ========== MOBILE & TABLET RESPONSIVE ========== */
 
 /* Navigation Mobile */
-@media (max-width: 1593px) {
+@media (max-width: 1669px) { /* was 1593px; raised when the Courses link was added */
   .nav-links {
     display: none;
   }
